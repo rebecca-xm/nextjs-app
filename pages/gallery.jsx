@@ -18,17 +18,17 @@ const Gallery = () => {
             <div className={styles.text}>
                 <h3>Ecco la mia gallery</h3>
             </div>
-            <div className={styles.img}>
+            <div className={styles.wrapperImg}>
                 {img.length && (
                     img.map((gallery) => (
-                        <div className={styles.galleryImg} key={gallery.title}>
+                        <div className={styles.img} key={gallery.title}>
                             <Image
                                 src={gallery.url}
                                 alt={gallery.title}
                                 width="300"
                                 height="300"
                             />
-                            <p>{gallery.title}</p>
+                            {/* <p>{gallery.title}</p> */}
                         </div>
                     ))
                 )}
