@@ -16,14 +16,15 @@ const DefaultLayout = ({ children }) => {
               <a>GALLERY</a>
             </Link>
           </li>
+          <li>
+            <Link href="/experiment">
+              <a>ESPERIMENTI</a>
+            </Link>
+          </li>
         </ul>
       </div>
 
       <div className={styles.content}>{children}</div>
-
-      <footer className={styles.footer}>
-        <h1>Prova footer</h1>
-      </footer>
     </>
   );
 }
